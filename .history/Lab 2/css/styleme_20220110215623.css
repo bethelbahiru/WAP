@@ -1,0 +1,21 @@
+body {
+    background-color: dimgray;
+}
+
+#pro-pic {
+    position: relative;
+    width: 10%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+.description {}
+
+
+<h1>About Bethel Bahiru Mulat</h1>
+<p>My name is <strong>Bethel</strong>. My friends and family call me Koki. I am a very <strong>easy going</strong>, <strong>friendly</strong> and<strong> fun loving</strong> person.</p>
+
+img {
+    width: 300px;
+    height: 300px;
+}

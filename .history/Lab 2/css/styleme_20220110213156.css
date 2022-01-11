@@ -1,0 +1,10 @@
+body {
+    background-color: dimgray;
+}
+
+img {
+    float: left;
+    width: 300px;
+    height: 300px;
+
+}

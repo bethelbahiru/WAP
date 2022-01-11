@@ -1,0 +1,15 @@
+body {
+    background-color: dimgray;
+}
+
+#pro-pic {
+    position: relative;
+    width: 10%;
+    height: ;
+    border-radius: 30%;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
