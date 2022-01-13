@@ -1,0 +1,59 @@
+body {
+    background-image:url("/Homework2/images/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.banner {
+    background-image: url("/Homework2/images/bannerbg.png");
+    background-repeat: repeat-x;
+}
+
+#title {
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    border: 4px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.rotten {
+    background-image: url("/Homework2/images/rbg.png");
+    border-radius: 10px;
+    text-align: left;
+    max-height: 83px;
+
+}
+
+#rating{
+    font-weight: bold;
+    font-size: 48pt;
+    color: red;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.movie {
+    background-color: #A2B964;
+    width: 250px;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+
+dt {
+    font-weight: bold;
+    padding-top: 10pt;
+}
+
+ul li {
+    list-style-type: none;
+    
+}

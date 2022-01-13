@@ -1,0 +1,9 @@
+body {
+    background-image:url("/Homework2/images/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.banner img {
+    background-image: repeat;
+}

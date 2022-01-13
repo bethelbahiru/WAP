@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrive Grade</title>
+
+    <link rel="stylesheet" href="grade.css">
+</head>
+<body>
+    <h1>Retrieve your grade</h1>
+
+    <form action="http://mumstudents.org/params.php">
+        <fieldset class= "box">
+            <legend>Retrive Grade</legend>
+            <label>Student Name:</label> <input type="text" placeholder="Enter Name" name="name" required/>
+            <label>Student Surname:</label> <input type="text" placeholder="Enter Surname" name="surname" required/> <br/> <br/>
+            <label>Student ID:</label> <input type="number" placeholder="Enter Student ID" name="id" maxlength="6" required/> <label>Course:</label> 
+            <select name="course">
+                <option value="WAP">Web Application Programming</option>
+                <option value="MWA">Modern Web Application</option>
+                <option value="ALG">Algorithms</option>
+                <option value="EA">Enterprise Architecture</option>
+            </select>   <br/> <br/>
+
+            <label>Entry:</label> <input type="radio" value="February 2021" name="entry" checked/>February 2021
+            <input type="radio" value="May 2021" name="entry"/>May 2021
+            <input type="radio" value="August 2021" name="entry"/> August 2021 
+            <input type="radio" value="November 2021" name="entry"/> November 2021
+
+            <br/> <br/>
+
+            <input type="checkbox" value="agree" required/><label>I confirm the information provided are legit.</label>
+
+            <br/> <br/>
+
+            <input type="button" value= "Get Result"/>
+        </fieldset>
+    </form>
+
+    <div class="checkers">
+        <br>
+        <a href="../index.html"> <img id="back"  src="images/back.gif" alt="back image"> <span>back to front page</span></a> <br><br>
+        <br>
+        <a href="http://validator.w3.org/nu/?doc=https://bethelbahiru.github.io/Lab3/grade.html"> <img src="images/w3c-html.png" alt="HTML Checker Icon"></a>
+		<a href="http://validator.w3.org/nu/?doc=https://seidahmed38.github.io/Lab3/grades.css"> <img src="images/w3c-css.png" alt="CSS Checker Icon"></a>
+    </div>
+</body>
+</html>

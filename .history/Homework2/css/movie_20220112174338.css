@@ -1,0 +1,20 @@
+body {
+    background-image:url("/Homework2/images/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.banner {
+    background-image: url("/Homework2/images/bannerbg.png");
+    background-repeat: repeat-x;
+}
+
+#title {
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+    text-align: center;
+}
+
+content {}
