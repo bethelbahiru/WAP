@@ -1,0 +1,3 @@
+function calcTip() {
+    var sub
+}
