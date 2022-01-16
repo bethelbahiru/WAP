@@ -39,6 +39,7 @@ function igpay() {
         let firstMatch = value.match(/[aeiou]/g) || 0;
         let vowel = value.indexOf(firstMatch[0]);
         document.getElementById('text').value = value.substring(vowel) + value.substring(0, vowel) + "-ay";
+        document.getElementById('text').style.color = "red";
     }
     
 }
