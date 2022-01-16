@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Exercise</title>
+</head>
+<body>
+    <p> Question 1. What is the difference between the following 2 statements?
+        <p>setTimeout(booyah, 2000);</p>
+        <p>setTimeout(booyah(), 2000);</p>
+        Answer:
+        <hr>
+        <ul>
+            <li>setTimeout(booyah, 2000) -> In this function, booyah is going to be called after 2000 ms.</li>
+            <li>setTimeout(booyah (), 2000) -> In this function, booyah is going to be called immediately.</li>
+            <p>So, inorder to used setTimeout properly we have to define the function inside without a paranthesis.</p>
+        </ul>
+    </p>
+    <hr>
+    <p>Question 2. What do the following 2 alerts display (answer without running the code)?
+        <pre>
+            var myfunc = function(a, x) {
+                return a * x;
+               };
+               var x = myfunc(2, 3);
+               var y = myfunc;
+               alert(x);
+               alert(y(2,3));
+        </pre>
+        Answer:
+        <hr> 
+        <ul>
+            <li>First alert: 6</li>
+            <li>Second alert: 6</li>
+        </ul>  
+    </p>
+    <hr>
+    <p>Question 3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+        says “BOOYAH!”
+        <pre>
+            setTimeout(booyah1, 2000);
+            setTimeout(booyah2(), 2000);
+        </pre>
+        Answer:
+        <hr>
+        <pre>
+            function booyah1() {
+                alert()
+            }
+        </pre>
+    </p>
+
+</body>
+</html>
