@@ -18,8 +18,8 @@
     <div id="fieldsets">
         <fieldset>
             <legend>Play Controls:</legend>
-            <button id= "startButton" onclick="start()">Start</button>
-            <button id= "stopButton" onclick="stop()" disabled>Stop</button>
+            <button>Start</button>
+            <button disabled>Stop</button>
         </fieldset>
         <fieldset>
             <legend>Animation:</legend>
@@ -34,18 +34,17 @@
         </fieldset>
         <fieldset>
             <legend>Size:</legend>
-            <select id = "size" onchange="sizes()">
-                <option value = "7">Tiny</option>
-                <option value = "10">Small</option>
-                <option value = "12" selected>Medium</option>
-                <option value = "16">Large</option>
-                <option value = "24">Extra Large</option>
-                <option value = "32">XXL</option>
+            <select name = "size">
+                <option value = "tiny">Tiny</option>
+                <option value = "small">Small</option>
+                <option value = "medium">Medium</option>
+                <option value = "large"</option>
+
             </select>
         </fieldset>
         <fieldset>
             <legend>Speed:</legend>
-            <input type="checkbox" name="speed" onchange="turbo()" /> <label>Turbo</label>
+            <input type="checkbox" name="speed" /> <label>Turbo</label>
         </fieldset>
     </div>
 

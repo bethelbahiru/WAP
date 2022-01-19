@@ -16,7 +16,7 @@ function turbo() {
 }
 
 
-function start() {
+function startButton() {
     console.log("starting");
     document.getElementById('stopButton').disabled = false;
     document.getElementById('startButton').disabled = true;
