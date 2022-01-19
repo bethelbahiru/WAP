@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope Exercise</title>
+</head>
+<body>
+    <h1><strong>Scope Exercise</strong></h1>
+    <p> Determine what this Javascript code will print out (without running it):
+        <pre>
+            x = 1;
+            var a = 5;
+            var b = 10;
+            var c = function(a, b, c) {
+            var x = 10;
+            document.write(x);
+            document.write(a);
+            var f = function(a, b, c) {
+            b = a;
+            document.write(b);
+            b = c;
+            var x = 5;
+            }
+            f(a,b,c);
+            document.write(b);
+             }
+            c(8,9,10);
+            document.write(b);
+            document.write(x);
+        </pre>
+       
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>10</li>
+            <li>8</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>1</li>      
+        </ul>
+    </p>
+    <hr>
+    <p>Question 2.  What is the difference between a method and function ?
+
+        <strong>Answer:</strong>
+        <hr> 
+        <ul>
+            <li>Method: It is a property of an object that contains a function definition. It's called using <em>ObjectName.methodName()</em></li>
+            <li>Function: It's a block of code which is used to carry out some specific task. It's called as <em>functionName()</em></li>
+        </ul>  
+    </p>
+    <hr>
+    <p>Question 3. What does 'this' refer to when used in a Java method ?
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>In java, it's a reference varibale and it refers to the current state of an object.</li>
+        </ul> 
+    </p>
+    <hr>
+    <p>Question 4. What does 'this' refer to when used in a Javascript method ?
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>In Javascript, this keyword refers to the enclosing object it belongs to.</li>
+        </ul>  
+    </p>
+    <hr>
+    <p>Question 5.What does 'this' refer to when used in a JavaScript constructor function?
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>It is a substitute for the new object to be created. The value of this will become the new object when a new object is created.</li>
+        </ul>  
+    </p>
+    <hr>
+    <p>Question 6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'.
+        When f is called by x.f( ), what does 'this' refer to?
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>this refers to x in this case, because when x inherits the method f() from y, this will become x.</li>
+        </ul>  
+    </p>
+    <hr>
+    <p>Question 6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'.
+        When f is called by x.f( ), what does 'this' refer to ?
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>this refers to x in this case, because when x inherits the method f() from y, this will become x.</li>
+        </ul>  
+    </p>
+    <hr>
+    <p>Question 7. What is a free variable in JavaScript ?
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>It is a varibale that is neither passed as a parameter nor localy declared</li>
+        </ul>  
+    </p>
+    <hr>
+    <p>Question 8. Create an object that has properties with name = "fred" and major="music" and a property that is a function
+        that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal ?
+        <strong>Answer:</strong>
+        <hr>
+        <pre>
+            var obj = {
+                name: "fred",
+                major: "music",
+                myMethod: function(a,b) {
+                            if (a===b) {
+                                return Math.pow(Number.pareseInt(a + b), 2);
+                            } else {
+                                return Math.max(a,b);
+                            }
+                }
+            };
+        </pre> 
+    </p>
+    <hr>
+    <p>Question 9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function.
+        Employee objects have the following fields: name, salary, position.
+        <strong>Answer:</strong>
+        <hr>
+        <pre>
+            function Employee() {}
+        </pre> 
+    </p>
+    <hr>
+
+
+
+    
+
+
+    
+
+
+
+    
+    
+  
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+(function rudyTimer() {
+    setInterval(write)
+
+})();
