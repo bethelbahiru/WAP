@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Exercise</title>
+</head>
+<body>
+    <h1><strong>Javascript Module Exercise</strong></h1>
+    <p> Question 1. Determine what this Javascript code will print out (without running it):
+        <pre>
+            x = 1;
+            var a = 5;
+            var b = 10;
+            var c = function(a, b, c) {
+            document.write(x);
+            document.write(a);
+            var f = function(a, b, c) {
+            b = a;
+            document.write(b);
+            b = c;
+            var x = 5;
+            }
+            f(a,b,c);
+            document.write(b);
+            var x = 10;
+            }
+            c(8,9,10);
+            document.write(b);
+            document.write(x);
+            }
+        </pre>
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>1, 8, 8, 9, 10, 1</li>
+        </ul>
+    </p>
+    <hr>
+    <p>Question 2.  Define Global Scope and Local Scope in Javascript ?
+        <br>
+        <br>
+        <strong>Answer:</strong>
+        <hr> 
+        <ul>
+            <li>Global Scope: Is a scope which is accessible throughout the program. Variables defined here can be used anywhere in the program.</li>
+            <li>Local Scope: Is a scope which is only found in the function it's defined in. Variables defined in this scope are not accessible ouside their definition scope.</li>
+        </ul>  
+    </p>
+    <hr>
+    <p>Question 3. Consider the following structure of Javascript code:
+        <pre>
+            // Scope A
+            function XFunc () {
+                // Scope B
+                function YFunc () {
+                    // Scope C
+                };
+            };
+            (a) Do statements in Scope A have access to variables defined in Scope B and C?
+            (b) Do statements in Scope B have access to variables defined in Scope A?
+            (c) Do statements in Scope B have access to variables defined in Scope C?
+            (d) Do statements in Scope C have access to variables defined in Scope A?
+            (e) Do statements in Scope C have access to variables defined in Scope B?
+        </pre>
+        <strong>Answer:</strong>
+        <hr>
+        <ol style="list-style-type: lower-alpha;">
+            <li>No</li>
+            <li>Yes</li>
+            <li>No</li>
+            <li>Yes</li>
+            <li>Yes</li>
+        </ol>  
+       
+    </p>
+    <hr>
+    <p>Question 4. What will be printed by the following (answer without running it)?
+        <pre>
+            var x = 9;
+            function myFunction() {
+                return x * x;
+            }
+            document.write(myFunction());
+            x = 5;
+            document.write(myFunction());
+        </pre>
+        <br/>
+        <br/>
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>81</li>
+            <li>25</li>
+        </ul>  
+    </p>
+    <p>Question 5. What will the alert print out? (Answer without running the code. Remember hoisting.)?
+        <pre>
+            function bar() {
+                var foo;
+                console.log(foo);
+                if (!foo) {
+                    foo = 10;
+                }
+            console.log(foo);
+                }
+            bar();
+        </pre>
+        <br/>
+        <br/>
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>10</li>
+        </ul>  
+    </p>
+
+    <p>Question 6. Consider the following definition of an add( ) function to increment a counter variable:
+        <pre>
+            var add = (function () {
+                var counter = 0;
+                return function () {
+                    return counter += 1;
+                }
+            })();
+            Modify the above module to define a count object with two methods: add( ) and reset( ). The count.add( ) method
+            adds one to the counter (as above). The count.reset( ) method sets the counter to 0.
+        </pre>
+        <br/>
+        <br/>
+        <strong>Answer:</strong>
+        <hr>
+        <pre>
+            var add = (function(){})()
+        </pre>
+    </p>
+
+</body>
+</html>

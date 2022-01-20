@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Exercise</title>
+</head>
+<body>
+    <h1><strong>Javascript Module Exercise</strong></h1>
+    <p> Question 1. Determine what this Javascript code will print out (without running it):
+        <pre>
+            x = 1;
+            var a = 5;
+            var b = 10;
+            var c = function(a, b, c) {
+            document.write(x);
+            document.write(a);
+            var f = function(a, b, c) {
+            b = a;
+            document.write(b);
+            b = c;
+            var x = 5;
+            }
+            f(a,b,c);
+            document.write(b);
+            var x = 10;
+            }
+            c(8,9,10);
+            document.write(b);
+            document.write(x);
+            }
+        </pre>
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>1, 8, 8, 9, 10, 1</li>
+        </ul>
+    </p>
+    <hr>
+    <p>Question 2.  Define Global Scope and Local Scope in Javascript ?
+        <br>
+        <br>
+        <strong>Answer:</strong>
+        <hr> 
+        <ul>
+            <li>Global Scope: Is a scope which is accessible throughout the program. Variables defined here can be used anywhere in the program.</li>
+            <li>Local Scope: Is a scope which is only found in the function it's defined in. Variables defined in this scope are not accessible ouside their definition scope.</li>
+        </ul>  
+    </p>
+    <hr>
+    <p>Question 3. Consider the following structure of Javascript code:
+        <pre>
+            // Scope A
+            function XFunc () {
+                // Scope B
+                function YFunc () {
+                    // Scope C
+                };
+            };
+            (a) Do statements in Scope A have access to variables defined in Scope B and C?
+            (b) Do statements in Scope B have access to variables defined in Scope A?
+            (c) Do statements in Scope B have access to variables defined in Scope C?
+            (d) Do statements in Scope C have access to variables defined in Scope A?
+            (e) Do statements in Scope C have access to variables defined in Scope B?
+        </pre>
+        <strong>Answer:</strong>
+        <hr>
+        <ol style="list-style-type: lower-alpha;">
+            <li>No</li>
+            <li>Yes</li>
+            <li>No</li>
+        </ol>  
+       
+    </p>
+    <hr>
+    <p>Question 4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+        for using it)?
+        <br/>
+        <br/>
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>It means that the js is placed in a separate file ratherthan embeded into the head of the page.</li>
+            <li>It is useful because sometimes when the js is specified in the head of html, it's fully loaded before the content of the html and it may try to find elements yet to be loaded resulting in a none return.</li>
+        </ul>  
+    </p>
+
+</body>
+</html>

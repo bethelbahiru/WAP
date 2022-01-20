@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Exercise</title>
+</head>
+<body>
+    <h1><strong>Javascript Module Exercise</strong></h1>
+    <p> Question 1. Determine what this Javascript code will print out (without running it):
+        <pre>
+            x = 1;
+            var a = 5;
+            var b = 10;
+            var c = function(a, b, c) {
+            document.write(x);
+            document.write(a);
+            var f = function(a, b, c) {
+            b = a;
+            document.write(b);
+            b = c;
+            var x = 5;
+            }
+            f(a,b,c);
+            document.write(b);
+            var x = 10;
+            }
+            c(8,9,10);
+            document.write(b);
+            document.write(x);
+            }
+        </pre>
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>1, 8, 8, 9, 10, 1</li>
+        </ul>
+    </p>
+    <hr>
+    <p>Question 2.  Define Global Scope and Local Scope in Javascript ?
+        <br>
+        <br>
+        <strong>Answer:</strong>
+        <hr> 
+        <ul>
+            <li>First alert: 6</li>
+            <li>Second alert: 6</li>
+        </ul>  
+    </p>
+    <hr>
+    <p>Question 3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+        says “BOOYAH!”
+        <pre>
+            setTimeout(booyah1, 2000);
+            setTimeout(booyah2(), 2000);
+        </pre>
+        <strong>Answer:</strong>
+        <hr>
+        <pre>
+            function booyah1() {
+                alert('BOOYAH!');
+            }
+        </pre>
+        <pre>
+            function booyah2() {
+                return function () {
+                    alert('BOOYAH!');
+                }
+            }
+        </pre>
+    </p>
+    <hr>
+    <p>Question 4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+        for using it)?
+        <br/>
+        <br/>
+        <strong>Answer:</strong>
+        <hr>
+        <ul>
+            <li>It means that the js is placed in a separate file ratherthan embeded into the head of the page.</li>
+            <li>It is useful because sometimes when the js is specified in the head of html, it's fully loaded before the content of the html and it may try to find elements yet to be loaded resulting in a none return.</li>
+        </ul>  
+    </p>
+
+</body>
+</html>
