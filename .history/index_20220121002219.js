@@ -53,8 +53,8 @@ f();
 
 
 var emp = (function () {
-    var name = [];
-
+    ar name = [];
+v
     var o = {};
     give = function () {
         console.log('hellooooo');

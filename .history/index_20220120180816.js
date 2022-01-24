@@ -55,10 +55,11 @@ f();
 var emp = (function () {
     var name = [];
 
-    var o = {};
+    o = {};
     give = function () {
         console.log('hellooooo');
     }
+
     o.give = give;
     return o;  
 })();
@@ -66,7 +67,11 @@ var emp = (function () {
 
 console.log("***********");
 
-let max = (a,b,c) => { return Math.max(a,b,c); }
+console.log(o.give());
 
-console.log(max(1,2,6));
+const promise = new Promise((resolve, reject) => {
+    reject("hatta");
+    });
+    promise.then(val => alert("sucess" + val))
+     .catch(e => alert("hatta" + e));
 

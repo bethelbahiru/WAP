@@ -55,18 +55,30 @@ f();
 var emp = (function () {
     var name = [];
 
-    var o = {};
-    give = function () {
-        console.log('hellooooo');
-    }
-    o.give = give;
-    return o;  
+    return {
+        setAge: function (newAge) {
+            return name.push(newAge);
+        },
+        setName: function () {
+            return name.pop();
+        },
+        setSalary:function () {
+            return name.length
+        },    
+    };
 })();
 
 
-console.log("***********");
 
-let max = (a,b,c) => { return Math.max(a,b,c); }
+var x = 1;
 
-console.log(max(1,2,6));
+function z () {
+    console.log(x);
+    x = 2;
+    if (x > 2) {
+        x = 3;
+        console.log(x);
+    }
 
+    var f = function (x) { console.log(x)}
+}

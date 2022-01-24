@@ -66,7 +66,7 @@ var emp = (function () {
 
 console.log("***********");
 
-let max = (a,b,c) => { return Math.max(a,b,c); }
+let max = (a,b,c) => { Math.max(a,b,c); }
 
 console.log(max(1,2,6));
 

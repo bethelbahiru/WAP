@@ -53,20 +53,28 @@ f();
 
 
 var emp = (function () {
-    var name = [];
+    var name = "";
+    var age = 0;
+    var salary = 0;
 
-    var o = {};
-    give = function () {
-        console.log('hellooooo');
-    }
-    o.give = give;
-    return o;  
+    return {
+        setAge: function (newAge) {
+            age = newAge;
+        },
+        setName: function (newName) {
+            name = newName;
+        },
+        setSalary:function (newSalary) {
+            salary = newSalary;
+        },
+        increaseSalary: function (percentage) {
+            return getSlary() + (getSlary() * (percentage/100));
+        },
+        increamentAge: function () {
+            return getAge()++;
+        }
+
+        
+    };
 })();
-
-
-console.log("***********");
-
-let max = (a,b,c) => { return Math.max(a,b,c); }
-
-console.log(max(1,2,6));
 

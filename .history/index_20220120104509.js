@@ -55,18 +55,25 @@ f();
 var emp = (function () {
     var name = [];
 
-    var o = {};
-    give = function () {
-        console.log('hellooooo');
-    }
-    o.give = give;
-    return o;  
+    return {
+        setAge: function (newAge) {
+            return name.push(newAge);
+        },
+        setName: function () {
+            return name.pop();
+        },
+        setSalary:function () {
+            return name.length
+        },    
+    };
 })();
 
 
 console.log("***********");
 
-let max = (a,b,c) => { return Math.max(a,b,c); }
-
-console.log(max(1,2,6));
+const promise = new Promise((resolve, reject) => {
+    reject("hatta");
+    });
+    promise.then(val => alert(“Success: “ + val))
+     .catch(e => alert(“Error: “ + e));
 

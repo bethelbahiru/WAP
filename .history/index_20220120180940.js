@@ -66,7 +66,11 @@ var emp = (function () {
 
 console.log("***********");
 
-let max = (a,b,c) => { return Math.max(a,b,c); }
+console.log(emp.give());
 
-console.log(max(1,2,6));
+const promise = new Promise((resolve, reject) => {
+    reject("hatta");
+    });
+    promise.then(val => alert("sucess" + val))
+     .catch(e => alert("hatta" + e));
 
