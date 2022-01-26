@@ -17,8 +17,8 @@
         <hr>
         <pre>
             $(document).ready(function() {
-                var temp = $("p").first().text();
-                $("p").last().html(temp);
+                var temp = $("p")..text();
+                $("p:last").html(temp);
             });        
         </pre>
     </p>
@@ -58,7 +58,7 @@
         <hr>
         <pre>
             $(document).ready(function(){
-                $(".turkey").replaceWith("&lt;li class="mashed_potatoes"&gt;Mashed Potatoes&lt;/li&gt;")
+                $(".turkey ").replaceWith("(li) Mashed Potatoes (/li)");
                 });
         </pre>
     </p>

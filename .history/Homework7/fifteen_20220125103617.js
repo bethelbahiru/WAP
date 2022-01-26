@@ -1,0 +1,16 @@
+$(documet).ready(function(){
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
