@@ -1,0 +1,5 @@
+
+
+var dictionary = function(word) {
+
+}

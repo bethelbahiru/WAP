@@ -1,0 +1,36 @@
+#header {
+    margin: auto;
+    text-align: center;
+    background-color: burlywood;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+#container {
+    margin: auto;
+    text-align: center;
+}
+
+input[type = text] {
+    padding:10px;
+    border-radius:10px;
+    wid
+}
+
+input[type = submit] {
+    padding:10px;
+    border-radius:10px;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    font-size: large;
+}
