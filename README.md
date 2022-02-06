@@ -1,4 +1,4 @@
-## WAP Lab HomeWorks:
+## WAP Lab HomeWorks and Project:
 
-## [Lab 1: Home Page](https://bethelbahiru.github.io/)
+## Contents covered: HTML, CSS, JavaScript, Jquery, Ajax, Node JS, and Express web framework
 
