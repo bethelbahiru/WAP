@@ -1,4 +1,4 @@
-## WAP Lab HomeWorks and Project:
+## Web Application Programming (WAP) Lab HomeWorks and Project:
 
 ### Contents covered: 
 
